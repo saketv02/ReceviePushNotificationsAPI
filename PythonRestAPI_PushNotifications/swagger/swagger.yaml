@@ -1,0 +1,33 @@
+---
+swagger: "2.0"
+info:
+  version: "0.0.0"
+  title: "<Receive Push notifications>"
+host: "localhost:8080"
+paths:
+  /pushNotify:
+    post:
+      tags:
+      - "PushNotification"
+      description: "Post a push notification\n"
+      operationId: "controllers.default_controller.add_notifications"
+      parameters:
+      - in: "body"
+        name: "message"
+        description: "Push notification"
+        required: true
+        schema:
+          $ref: "#/definitions/resp"
+      responses:
+        200:
+          description: "Successful response"
+        400:
+          description: "Failed to register notification"
+definitions:
+  resp:
+    type: "object"
+    properties:
+      messageId:
+        type: "string"
+      body:
+        type: "string"

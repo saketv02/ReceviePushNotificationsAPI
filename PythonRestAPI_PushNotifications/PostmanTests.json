@@ -1,0 +1,48 @@
+{
+	"id": "3b095755-9adc-958c-46ff-2abf99e773cd",
+	"name": "Assingment5",
+	"description": "",
+	"order": [
+		"519b9aca-c867-ff05-b9bb-a999f18d46f1"
+	],
+	"folders": [],
+	"timestamp": 1458632330463,
+	"owner": "366836",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "519b9aca-c867-ff05-b9bb-a999f18d46f1",
+			"headers": "",
+			"url": "",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3b095755-9adc-958c-46ff-2abf99e773cd",
+			"data": [
+				{
+					"key": "messageId",
+					"value": "test",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "test",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1458632446569,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 200\"]= responseCode.code ===200",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
